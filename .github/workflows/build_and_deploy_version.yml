@@ -1,4 +1,4 @@
-name: TeslaRIS Frontend Deploy
+name: TeslaRIS Frontend Deploy Versioning
 
 on:
   workflow_dispatch:
@@ -33,9 +33,6 @@ jobs:
     steps:
     
       - uses: actions/checkout@v4
-
-      - name: Build dist files
-        run: npm run build
 
       - name: Set custom environment variables
         run: |
